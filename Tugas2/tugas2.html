@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Mahasiswa</title>
+</head>
+<body>
+<table  border="2" width="100%" >
+    <tr>
+        <th> <h1>Absensi Mahasiswa Teknik Informatika</h1></th>
+    </tr>
+</table>
+   
+
+    <table border="3" cellspacing="2" cellpadding="4">
+        <tr>
+            <th rowspan="3">NO</th>
+            <th rowspan="3">NPM</th>
+            <th rowspan="3">NAMA</th>
+            <th colspan="7">PERTEMUAN</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+        </tr>
+        <tr>
+            <td>9-Feb</td>
+            <td>16-Feb</td>
+            <td>23-Feb</td>
+            <td>2-Mar</td>
+            <td>9-Mar</td>
+            <td>16-Mar</td>
+            <td>23-Mar</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1111111111</td>
+            <td>Nyjah Huston</td>
+            <td>V</td>
+            <td></td><td></td><td></td>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2222222222</td>
+            <td>Luan Olivera</td>
+            <td>V</td>
+            <td></td><td></td><td></td>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3333333333</td>
+            <td>Yuto Horigome</td>
+            <td>V</td>
+            <td></td><td></td><td></td>
+            <td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Form Mahasiswa</h2>
+
+    <form>
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>NPM</td>
+                    <td>:</td>
+                    <td><input type="text" name="npm"></td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td>:</td>
+                    <td>
+                        <select name="kelas">
+                            <option>-</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jk" value="Pria">Pria
+                        <input type="radio" name="jk" value="Wanita">Wanita
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tempat Tinggal Mahasiswa</legend>
+
+            <table>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="alamat" rows="4" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Kecamatan</td>
+                    <td>:</td>
+                    <td><input type="text" name="kecamatan"></td>
+                </tr>
+                <tr>
+                    <td>Kabupaten/Kotamadya</td>
+                    <td>:</td>
+                    <td><input type="text" name="kabupaten"></td>
+                </tr>
+                <tr>
+                    <td>Provinsi</td>
+                    <td>:</td>
+                    <td><input type="text" name="provinsi"></td>
+                </tr>
+                <tr>
+                    <td>Kode Pos</td>
+                    <td>:</td>
+                    <td><input type="text" name="kodepos"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Lain-lainnya</legend>
+
+            <table>
+                <tr>
+                    <td>Bahasa Pemrograman</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="bahasa" value="C/C++">C/C++
+                        <input type="checkbox" name="bahasa" value="Go Lang">Go Lang
+                        <input type="checkbox" name="bahasa" value="Python">Python
+                        <input type="checkbox" name="bahasa" value="Lainnya">Lainnya
+                        <br>
+                        <input type="checkbox" name="bahasa" value="PHP">PHP
+                        <input type="checkbox" name="bahasa" value="Javascript">Javascript
+                        <input type="checkbox" name="bahasa" value="Ruby">Ruby
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kegiatan</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="kegiatan" value="Organisasi Kampus">Organisasi Kemahasiswaan
+                        <input type="checkbox" name="kegiatan" value="Olahraga">Bidang Olahraga
+                        <input type="checkbox" name="kegiatan" value="Lainnya">Lainnya
+                        <br>
+                        <input type="checkbox" name="kegiatan" value="Organisasi Luar">Organisasi di Luar Kampus
+                        <input type="checkbox" name="kegiatan" value="Seni">Bidang Seni
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
